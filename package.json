@@ -1,0 +1,14 @@
+{
+    "name": "@embarkment/web-template-frontend",
+    "version": "1.0.0",
+    "scripts": {
+        "clean": "rm -f -r ./dist/**",
+        "dev": "npm run build:public",
+        "build:public": "mkdir ./dist/public && cp -r ./public/{media,scripts,styles} ./dist/public/ && cp ./public/index.html ./dist/",
+        "build": "npm run clean && npm run build:public && tsc",
+        "start": "node ./file-watcher.js ./public & tsc -p . --watch"
+    },
+    "devDependencies": {
+        "typescript": "^4.9.4"
+    }
+}

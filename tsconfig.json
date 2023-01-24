@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "es5",
+            "es6",
+            "dom",
+            "es2017"
+        ],
+        "target": "es6",
+        "module": "es6",
+        "moduleResolution": "NodeNext",
+        "outDir": "./dist/",
+        "sourceRoot": "./src",
+        "rootDirs": [
+            "./src",
+        ],
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "sourceMap": true,
+        "allowJs": true,
+        "checkJs": true,
+        "strict": true,
+        "noUnusedLocals": true,
+        "noImplicitAny": true,
+        "downlevelIteration": true
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "**/*.spec.ts", "dist", "public"]
+}

@@ -1,0 +1,1 @@
+console.log(`template application entry-point`);
